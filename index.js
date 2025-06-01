@@ -65,6 +65,16 @@ function playGame() {
         console.log("Computer score: " + computerScore);
     }
 
+    function endGame(humanScore, computerScore) {
+        if (humanScore > computerScore) {
+            console.log("You won! Congratulations!");
+        } else if (computerScore > humanScore) {
+            console.log("You lost to the computer :(");
+        } else {
+            console.log("Wow...it's a draw!");
+        }
+    }
+
     playRound(getHumanChoice(), getComputerChoice());
     displayScore();
     playRound(getHumanChoice(), getComputerChoice());
@@ -76,6 +86,7 @@ function playGame() {
     playRound(getHumanChoice(), getComputerChoice());
     displayScore();
 
+    endGame(humanScore, computerScore);
 }
 
 playGame();
