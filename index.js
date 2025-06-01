@@ -60,5 +60,22 @@ function playGame() {
         }
     }
 
+    function displayScore() {
+        console.log("Your score: " + humanScore);
+        console.log("Computer score: " + computerScore);
+    }
+
     playRound(getHumanChoice(), getComputerChoice());
+    displayScore();
+    playRound(getHumanChoice(), getComputerChoice());
+    displayScore();
+    playRound(getHumanChoice(), getComputerChoice());
+    displayScore();
+    playRound(getHumanChoice(), getComputerChoice());
+    displayScore();
+    playRound(getHumanChoice(), getComputerChoice());
+    displayScore();
+
 }
+
+playGame();
